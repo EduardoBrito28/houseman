@@ -1,3 +1,4 @@
+import '../global.css';
 import React, { useEffect, useState } from 'react';
 import { Stack, useRouter } from 'expo-router';
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -34,9 +35,17 @@ export default function Layout() {
         />
       )}
 
+      {/* Página Register */}
+      <Stack.Screen
+        name="register"
+        options={{
+          headerShown: false,
+        }}
+      />
+
       {/* Página Home */}
       <Stack.Screen
-        name="home"
+        name="(tabs)"
         options={{
           headerShown: false,
         }}
